@@ -1,0 +1,14 @@
+kind: ConfigMap 
+apiVersion: v1 
+metadata:
+  name: env-config
+data:
+  # Configuration values can be set as key-value properties
+  POSTGRES_HOST: database-1.cho8sgvlyfsw.us-west-2.rds.amazonaws.com
+  POSTGRES_DB: postgres
+  AWS_BUCKET: my-460199234500-bucket
+  AWS_REGION: us-west-2
+  AWS_PROFILE: default
+  URL: http://a558c3337cf51483f92f11cc8d3de17d-2118145362.us-west-2.elb.amazonaws.com:8100
+  JWT_SECRET: testing
+  
